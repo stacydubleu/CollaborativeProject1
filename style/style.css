@@ -1,0 +1,26 @@
+a {
+	text-decoration: none;
+}
+body {
+	background-image: url("http://host2post.com/server13/bgs/tw/twv2qqgwgotqgm~.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+#container {
+	position: relative;
+}
+#container > div {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#container > div > img {
+	transition: all 1s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: flow;
+}
