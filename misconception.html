@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed: 400, 300|Noto+Sans|Crete+Round|Pontano+Sans' rel='stylesheet' type='text/css'>
+	<title>Autism Society</title>
+	<!-- <script type="text/javascript">
+		window.onload = function() {
+			var main = document.getElementById("misc-main-content");
+			var sections = main.getElementsByTagName("div");
+			for (var i = 0; i < sections.length; i++) {
+				sections[i].addEventListener("click", function() {
+					var style = window.getComputedStyle(this);
+					if(style.getPropertyValue('height') == "300px") {
+						this.style.height = "30px";
+					} else {
+						this.style.height = "300px";
+					}
+				});
+			}
+		};
+	</script> -->
+	<script type="text/javascript">
+		window.onload = function() {
+			var sections = document.getElementsByClassName("tags");
+
+			for(var i = 0; i < sections.length; i++) {
+
+				var tag = sections[i].getElementsByTagName("h4")[0];
+
+				tag.addEventListener("click", function() {
+
+
+					var section = this.parentElement;
+
+					var angle = this.getElementsByClassName("angle")[0];
+
+					var style = window.getComputedStyle(section.getElementsByTagName("ul")[0]);
+
+					if(style.getPropertyValue("display") == "none") {
+
+						section.getElementsByTagName("ul")[0].style.display = "block";
+						angle.innerHTML = "▼";
+
+					} else {
+
+						section.getElementsByTagName("ul")[0].style.display = "none";
+						angle.innerHTML = "►";
+
+					}
+				});
+			}
+		}
+	</script>
+</head>
+<body>
+
+ <div id="top-icon"><a href="misconception.html#misc-main-content"><div>⇪</div></a></div>
+	<!-- <header>
+
+		<div>
+			<img alt="logo" src="http://www.autism-society.org/wp-content/themes/autismsociety-201401/images/50logobg.png" width="137px" height="100px">
+		</div>
+
+		<nav>
+			<div class="space_placer"></div>
+			<div>
+				<div>
+					<a href="index.html">Home</a>
+				</div>
+			</div>
+			<div>
+				<div>
+					<a href="misconception.html">Misconception</a>
+				</div>
+			</div>
+			<div>
+				<div>
+					<a href="whatcanyoudo.html">What Can You Do</a>
+				</div>
+			</div>
+		</nav>
+	</header> -->
+
+
+	 <header>
+		<div id="logo"></div>
+		<nav>
+			<div id="social">
+				<ul>
+					<li id="soc"><a href="https://twitter.com/"><img src="images/twitter.png" style="width:8%"></a></li>
+					<li id="soc"><a href="https://facebook.com/"><img src="images/facebook.png" style="width:8%"></a></li>
+					<li id="soc"><a href="https://instagram.com/"><img src="images/instagram.png" style="width:8%"></a></li>
+				</ul>
+			</div>
+			<ul>
+				<li id="list"><a href="index.html">Home</a></li>
+				<li id="list"><a href="misconception.html">Misconceptions</a></li>
+				<li id="list"><a href="whatCanYouDo.html">What You Can Do</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="border"></div>
+	<br>
+
+
+	<div id="misc-main-content">
+		<h1>Misconceptions</h1>
+
+		<!-- <div>
+			The appearance of autism is relatively new.
+			<img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_down_48px-128.png" width="30px" height="30px">
+		</div>
+		<div> 
+			Autism is a mental health disorder.
+			<img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_down_48px-128.png" width="30px" height="30px">
+		</div>
+		<div>
+			Autism is caused by vaccines
+			<img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_down_48px-128.png" width="30px" height="30px">
+		</div> -->
+		<div id="content-block">
+			<div id="left-content">
+				<div class="catolog-box">
+					<div class="top"></div>
+					<div class="bottom">
+						<ul>
+
+							<li class="tags">
+								<h4><span class="angle">►</span> Home</h4>
+								<ul></ul>
+							</li>
+
+							<li class="tags">
+								<h4><span class="angle">▼</span> Misconception</h4>
+								<ul>
+									<li><a href="misconception.html#vaccine">Autism is caused by vaccines</a></li>
+									<li><a href="misconception.html#disorder">Autism is a mental health disorder</a></li>
+									<li><a href="misconception.html#parenting">Autism is the result of bad parenting</a></li>
+									<li><a href="misconception.html#talents">Individual with autism have exceptional talents</a></li>
+								</ul>
+							</li>
+
+							<li class="tags">
+								<h4><span class="angle">►</span> What Can You Do</h4>
+								<ul></ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="right-content">
+				<div id="vaccine">
+					<a href="https://www.autismspeaks.org/science/science-news/new-meta-analysis-confirms-no-association-between-vaccines-and-autism"><h1>Vaccines can cause autism</h1></a>
+					<p>A meta-analysis of ten studies involving more than 1.2 million children reaffirms that vaccines don’t cause autism. If anything, immunization was associated with decreased risk that children would develop autism, a possibility that’s strongest with the measles-mumps-rubella vaccine.
+
+					The report appears online in the journal Vaccine as an “uncorrected proof.” This means that it has passed through peer review and been accepted for publication, but may still undergo proof-reading changes.
+
+					A meta-analysis combines and analyzes the results of multiple, earlier studies. By increasing the size of the sample – in this case to 1,266,327 children –scientists can generate more accurate conclusions than would be possible with a single study.
+
+					“This analysis provides further confirmation for a lack of association between vaccines and autism that the broader healthcare community has understood and embraced for some time,” comments Autism Speaks Chief Science Officer Rob Ring. "Autism Speaks’ own policy on vaccines echoes those of other credible healthcare organizations like the American Academy of Pediatrics and the World Health Organization. We strongly encourage parents to work with their physician to ensure their children receive the full benefits immunization offers in protecting their loved ones against a variety of preventable childhood diseases.” </p>
+
+					<hr>
+				</div>
+
+				<div id="disorder">
+					<a href="http://www.asmonline.org/resources/about-autism.aspx"><h1>Autism is an emotional or mental health disorder.</h1></a>
+					<p>Autism is a brain disorder that affects a person's ability to communicate, to reason, and to interact with others. It is a spectrum disorder that affects individuals differently and to varying degrees of severity, and it is often found in combination with other disabilities. The three “autism spectrum disorders” are: Autistic Disorder, Asperger's Disorder, and Pervasive Developmental Disorder-Not Otherwise Specified (PDD-NOS). The other Pervasive Developmental Disorders which are less common are: Childhood Disintegrative Disorder and Rett's Disorder.
+
+					Children and adults with autism typically have difficulties with verbal and nonverbal communication, social interactions and relationships, and leisure or play activities. The disorder interferes with the ability to communicate with others or become independent members of the community. Some individuals with autism may exhibit repeated body movements (hand flapping, rocking), unusual responses to people or attachments to objects, and resist any changes in routines. In some cases, aggressive and/or self-injurious behavior may be present.
+
+					It is conservatively estimated that nearly 1.5 million people in the United States today have some form of autism. It is the third most common developmental disability - even more common than Down's Syndrome. Yet the majority of the public, including many professionals in the medical, educational and vocational fields, are still unaware of how autism affects people, and how to work effectively with individuals with autism.</p>
+					<hr>
+				</div>
+				<div id="parenting">
+					<a href="http://abcnews.go.com/Health/ColdandFluNews/story?id=6089162&page=1"><h1>Autism is the result of cold and unemotional parents.</h1></a>
+					<p>In the 1940s, Austrian doctor Bruno Bettelheim theorized that autism was a result of parents, especially mothers, who did not love 		their children. Children in such situations would withdraw and become autistic, Bettelheim believed.
+
+						However, researchers have thawed the "refrigerator mother" theory. According to medical experts, a child's autism diagnosis has nothing to do with how the child is raised.
+
+						"We don't know if there are any things that a parent can do or not do, conclusively, will determine whether their child gets autism or not," said Dr. Daniel Geshwind, director of UCLA's neurogenetics program and center for autism research. "Most of the evidence right now points to there being a very strong genetic predisposition in most cases of autism, but not all."</p>
+						<hr>
+				</div>
+				<div id="talents">
+					<a href="http://abcnews.go.com/Health/ColdandFluNews/story?id=6089162&page=1" target="_blank"><h1>Individuals with autism always have hidden or exceptional talents.</h1></a>
+					<p>Stephen Wiltshire, 34, is best known as the human camera. He can replicate architectural designs and landscapes down to each blade of grass -- even if he is only given one opportunity to observe the area he is drawing. Wiltshire has reproduced panoramic scenes of Tokyo, Rome and London by memory after one short helicopter ride over each of the cities.
+
+					Wiltshire is an autistic savant. That is, he has extraordinary cognitive skills that allow him to recall details of designs, numbers and measurements that are normally considered too difficult to remember.
+
+					The concept of an autistic individual as a savant may have been popularized by Dustin Hoffman's character in the movie "Rain Man."
+
+					But while Marion acknowledges that there is a minority group of individuals with autism who have unusual islets of skills, savants are an unrealistic portrayal of the majority of individuals on the spectrum. He said most do not have talents or skills that distinguish themselves by extraordinary talents.
+
+					"There are strengths and weaknesses in every child," said Marion. "It's important for every child with autism to have a multidisciplinary evaluation by health professionals who have experience in assessing a child's skills and deficits, to come up with an educational plan that will benefit the child the most."</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<footer>
+		<div id="border"></div>
+		<br><br>
+		<p2>Autism Society | Etc | Etc Etc</p2>
+		<br><br>
+	</footer>
+
+</body>
+</html>
