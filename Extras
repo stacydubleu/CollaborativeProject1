@@ -1,0 +1,37 @@
+#lower-left {
+	width:50%;
+	float:left;
+
+}
+
+#lower-right {
+	width:50%;
+	float:left;
+
+}
+
+#upper-left {
+	width:49%;
+	height: 49%;
+	float:left;
+
+}
+
+#upper-right {
+	width:49%;
+	height: 49%;
+	float:left;
+
+}
+
+#lower-left {
+	width:49%;
+	float:left;
+
+}
+
+#lower-right {
+	width:49%;
+	float:left;
+
+}
