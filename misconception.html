@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed: 400, 300|Noto+Sans|Crete+Round|Pontano+Sans' rel='stylesheet' type='text/css'>
+	<!-- <script type="text/javascript">
+		window.onload = function() {
+			var main = document.getElementById("misc-main-content");
+			var sections = main.getElementsByTagName("div");
+			for (var i = 0; i < sections.length; i++) {
+				sections[i].addEventListener("click", function() {
+					var style = window.getComputedStyle(this);
+					if(style.getPropertyValue('height') == "300px") {
+						this.style.height = "30px";
+					} else {
+						this.style.height = "300px";
+					}
+				});
+			}
+		};
+	</script> -->
+	<script type="text/javascript">
+		window.onload = function() {
+			var sections = document.getElementsByClassName("tags");
+
+			for(var i = 0; i < sections.length; i++) {
+
+				var tag = sections[i].getElementsByTagName("h4")[0];
+
+				tag.addEventListener("click", function() {
+
+
+					var section = this.parentElement;
+
+					var angle = this.getElementsByClassName("angle")[0];
+
+					var style = window.getComputedStyle(section.getElementsByTagName("ul")[0]);
+
+					if(style.getPropertyValue("display") == "none") {
+
+						section.getElementsByTagName("ul")[0].style.display = "block";
+						angle.innerHTML = "▼";
+
+					} else {
+
+						section.getElementsByTagName("ul")[0].style.display = "none";
+						angle.innerHTML = "►";
+
+					}
+				});
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<header>
+
+		<div>
+			<img alt="logo" src="http://www.autism-society.org/wp-content/themes/autismsociety-201401/images/50logobg.png" width="137px" height="100px">
+		</div>
+
+		<nav>
+			<div class="space_placer"></div>
+			<div>
+				<div>
+					<a href="index.html">Home</a>
+				</div>
+			</div>
+			<div>
+				<div>
+					<a href="misconception.html">Misconception</a>
+				</div>
+			</div>
+			<div>
+				<div>
+					<a href="whatcanyoudo.html">What Can You Do</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="misc-main-content">
+		<h1>Misconceptions</h1>
+
+		<!-- <div>
+			The appearance of autism is relatively new.
+			<img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_down_48px-128.png" width="30px" height="30px">
+		</div>
+		<div> 
+			Autism is a mental health disorder.
+			<img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_down_48px-128.png" width="30px" height="30px">
+		</div>
+		<div>
+			Autism is caused by vaccines
+			<img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_down_48px-128.png" width="30px" height="30px">
+		</div> -->
+		<div id="content-block">
+			<div id="left-content">
+				<div class="catolog-box">
+					<div class="top"></div>
+					<div class="bottom">
+						<ul>
+
+							<li class="tags">
+								<h4><span class="angle">►</span> Home</h4>
+								<ul></ul>
+							</li>
+
+							<li class="tags">
+								<h4><span class="angle">▼</span> Misconception</h4>
+								<ul>
+									<li><a href="misconception.html#vaccine">Autism is caused by vaccines</a></li>
+									<li><a href="misconception.html#disorder">Autism is a mental health disorder</a></li>
+									<li><a href="misconception.html#parenting">Autism is the result of bad parenting</a></li>
+									<li><a href="misconception.html#talents">Individual with autism have exceptional talents</a></li>
+								</ul>
+							</li>
+
+							<li class="tags">
+								<h4><span class="angle">►</span> What Can You Do</h4>
+								<ul></ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="right-content">
+				<div id="vaccine">
+					<h1>Vaccines can cause autism</h1>
+					<p>One vaccine ingredient that has been studied specifically is thimerosal, a mercury-based preservative used to prevent contamination of multidose vials of vaccines. Research shows that thimerosal does not cause ASD. In fact, a 2004 scientific review by the IOM concluded that "the evidence favors rejection of a causal relationship between thimerosal–containing vaccines and autism." Since 2003, there have been nine CDC-funded or conducted studies[PDF - 357 KB] that have found no link between thimerosal-containing vaccines and ASD, as well as no link between the measles, mumps, and rubella (MMR) vaccine and ASD in children.
+
+					Between 1999 and 2001, thimerosal was removed or reduced to trace amounts in all childhood vaccines except for some flu vaccines. This was done as part of a broader national effort to reduce all types of mercury exposure in children before studies were conducted that determined that thimerosal was not harmful. It was done as a precaution. Currently, the only childhood vaccines that contain thimerosal are flu vaccines packaged in multidose vials. Thimerosal-free alternatives are also available for flu vaccine. For more information, see the Timeline for Thimerosal in Vaccines.
+
+					Besides thimerosal, some people have had concerns about other vaccine ingredients in relation to ASD as well. However, no links have been found between any vaccine ingredients and ASD.</p>
+					<hr>
+				</div>
+				<div id="disorder">
+					<h1>Autism is an emotional or mental health disorder.</h1>
+					<p>While physical or social behaviors of individuals with autism may suggest that they have a psychological disorder, autism is actually a biological illness that affects the brain's growth and development.
+					"In the case of autism, the parts of the brain that are most affected seem to impact three areas of functioning," said Michael Alessandri, executive director of the University of Miami's Center for Autism and Related Disabilities. "Social behavior, communication and restricted and repetitive rituals and routines are ways that the child or the adult with autism interact with the environment."
+					Although autism is now understood to be a neurodevelopmental disorder, Alessandri, an expert for ABCNews.com's OnCall+ Autism section, said autism can still be considered a complex disorder because its range of symptoms is so diverse.
+
+					"Scientists and clinicians now understand that autism is not a singular entity, but rather, a variety of syndromes that ... create the autism spectrum disorders," said Alessandri.</p>
+					<hr>
+				</div>
+				<div id="parenting">
+					<h1>Autism is the result of cold and unemotional parents.</h1>
+					<p>In the 1940s, Austrian doctor Bruno Bettelheim theorized that autism was a result of parents, especially mothers, who did not love 		their children. Children in such situations would withdraw and become autistic, Bettelheim believed.
+
+						However, researchers have thawed the "refrigerator mother" theory. According to medical experts, a child's autism diagnosis has nothing to do with how the child is raised.
+
+						"We don't know if there are any things that a parent can do or not do, conclusively, will determine whether their child gets autism or not," said Dr. Daniel Geshwind, director of UCLA's neurogenetics program and center for autism research. "Most of the evidence right now points to there being a very strong genetic predisposition in most cases of autism, but not all."</p>
+						<hr>
+				</div>
+				<div id="talents">
+					<h1>Individuals with autism always have hidden or exceptional talents.</h1>
+					<p>Stephen Wiltshire, 34, is best known as the human camera. He can replicate architectural designs and landscapes down to each blade of grass -- even if he is only given one opportunity to observe the area he is drawing. Wiltshire has reproduced panoramic scenes of Tokyo, Rome and London by memory after one short helicopter ride over each of the cities.
+
+					Wiltshire is an autistic savant. That is, he has extraordinary cognitive skills that allow him to recall details of designs, numbers and measurements that are normally considered too difficult to remember.
+
+					The concept of an autistic individual as a savant may have been popularized by Dustin Hoffman's character in the movie "Rain Man."
+
+					But while Marion acknowledges that there is a minority group of individuals with autism who have unusual islets of skills, savants are an unrealistic portrayal of the majority of individuals on the spectrum. He said most do not have talents or skills that distinguish themselves by extraordinary talents.
+
+					"There are strengths and weaknesses in every child," said Marion. "It's important for every child with autism to have a multidisciplinary evaluation by health professionals who have experience in assessing a child's skills and deficits, to come up with an educational plan that will benefit the child the most."</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div id="border"></div>
+		<br><br>
+		<p2>Autism Society | Etc | Etc Etc</p2>
+		<br><br>
+	</footer>
+</body>
+</html>
