@@ -5,13 +5,25 @@ h1 {
 	font-family: sans-serif;
 }
 
+html {
+	background-color: #e6f3ff;
+}
+
 h3 {
-	border: 2px solid #33ccff;
-	width: 600px;
+
+	padding: 8px;
 	background-color: #33ccff;
-	color:white;
-	font-family: monospace;
-	
+	color: white;
+	width:600px;
+}
+
+li {
+	float: left;
+	padding-left: 200px;
+	padding-top: 20px;
+	background-color: #33ccff;
+	list-style-type: none;
+	display:inline;
 }
 
 html, body {
@@ -26,5 +38,30 @@ html, body {
 
 }
 
+#navBarItems {
+	font-family: 'Roboto Condensed', sans-serif;
+	float: left;
+	height:100%;
+	width:100%;
+	margin-top: -50px;
+	margin-right: -50px;
+	color: white;
+}
 
+a: hover {
+	color: lightblue;
+}
+
+p {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+#social li {
+	font-size: 24px;
+	
+
+}
 
