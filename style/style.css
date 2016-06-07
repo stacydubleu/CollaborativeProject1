@@ -1,11 +1,9 @@
-/*html{
-	background-color: #e6f3ff;
-}
-body {
-	margin: 0px;
-}
 a {
 	text-decoration: none;
+}
+/*
+body {
+	margin: 0px;
 }
 header {
 	position: relative;
@@ -90,7 +88,7 @@ header{
 	margin-left: 5%;
 }
 
-nav {
+header nav {
 	font-family: 'Roboto Condensed', sans-serif;
 	height: 50%;
 	text-transform: uppercase;
@@ -112,13 +110,14 @@ nav {
 	border-radius: 15px;
 }
 
-a { /*anchor tag*/
+header a { 
 	color: white;
 	font-size: 18px;
 	text-decoration: none;
+	transition: all 0.5s;
 }
 
-a:hover {
+header a:hover {
 	color: lightblue;
 }
 
@@ -133,6 +132,7 @@ a:hover {
 footer{
 	text-align: center;
 }
+
 
 /**Slideshow css*/
 /* Slideshow container */
@@ -253,7 +253,6 @@ p{
 
 #mainContainer h3 {
 	border: 2px solid #33ccff;
-	width: 600px;
 	background-color: #33ccff;
 	color:white;
 	font-family: monospace;
@@ -267,11 +266,13 @@ html, body {
 
 #mainContainer {
 	margin-top: 50px;
+	margin: auto;
+    max-width: 1000px
 }
 #mainContainer .box {
 	float:left;
-	width: 49%;
-	height: 49%;
+	width: 50%;
+	height: 50%;
 
 }
 /**End whatYouCanDo Styling**/
@@ -307,6 +308,8 @@ html, body {
 }*/
 #misc-main-content {
 	position: relative;
+	margin: auto;
+  	max-width: 1000px
 }
 #misc-main-content > #content-block > #left-content {
 	width: 25%;
@@ -320,7 +323,7 @@ html, body {
 }
 #left-content > .catolog-box > .top {
 	height: 20px;
-	background-color: blue;
+	background-color: #625766;
 }
 #left-content > .catolog-box > .bottom > ul {
 	list-style-type: none;
@@ -330,4 +333,17 @@ html, body {
 }
 #left-content > .catolog-box > .bottom .tags a:hover {
 	text-decoration: underline;
+}
+#top-icon {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom:2%;
+	right:2%;
+}
+#top-icon > a > div {
+	text-align: center;
+	font-size: 25px;
+	color: #20222A;
+	transition: all 1s;
 }
